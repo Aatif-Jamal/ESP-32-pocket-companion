@@ -5,7 +5,7 @@ Hello reader. This project is merely a prototype to my first long-term project. 
 It's a tiny robot that can be hooked on like a keychain, built on perfboard. Animated eyes, banana snacks, and a button for attention. No custom PCB required.
 
 <img src="media/front-expressive-eyes.jpg" alt="The assembled robot keychain showing a face on its OLED" width="420">
-
+<img src="media/in-hand-angry-expression.jpg" alt="Angry expression" width="420">
 The idea is simple: make a small object feel like a character. Its expressions, pauses, and reactions matter as much as its electronics.
 
 ## What it does
