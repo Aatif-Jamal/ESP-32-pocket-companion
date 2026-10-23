@@ -48,4 +48,4 @@ Other possibilities include simple games, a laptop-connected desk companion, and
 
 ## Reuse
 
-[MIT licensed](LICENSE). See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for dependencies and inspiration. Contributions are welcome; keep the character expressive and the build approachable.
+[MIT licensed](LICENSE). See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for dependencies and inspiration. Contributions are welcome; keep the character expressive and the build approachable. I'd love for people to re-use my work in whatever way they want, just ensure that you use your own media. If you doubt there could be a problem, shoot me a DM on LinkedIn.
