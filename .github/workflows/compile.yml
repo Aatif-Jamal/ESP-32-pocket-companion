@@ -1,0 +1,32 @@
+name: Compile firmware
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: '1.5.1'
+      - name: Install pinned board and library dependencies
+        run: |
+          arduino-cli config init
+          arduino-cli config add board_manager.additional_urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32@3.3.12
+          arduino-cli lib install 'U8g2@2.36.19'
+      - name: Compile companion and hardware checks
+        run: |
+          arduino-cli compile --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc RoboPetEyes
+          arduino-cli compile --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc examples/DisplayCheck
+          arduino-cli compile --fqbn esp32:esp32:esp32c3:CDCOnBoot=cdc examples/ButtonCheck

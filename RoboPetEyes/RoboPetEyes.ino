@@ -342,5 +342,3 @@ void loop() {
   else drawIdle(now);
   oled.sendBuffer();
 }
-
-
