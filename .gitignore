@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+build/
+.build/
+.pio/
+*.elf
+*.bin
+*.hex
+*.map
+.env
+.env.*
+!.env.example
+secrets.h
+credentials.h
