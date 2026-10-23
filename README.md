@@ -1,6 +1,8 @@
 # ESP32 Pocket Companion
 
-A tiny robot with big feelings, built on perfboard. Animated eyes, banana snacks, and a button for attention. No custom PCB required.
+Hello reader. This project is merely a prototype to my first long-term project. It's the perfect way to begin learning basics such as
+**I2C communication, soldering, perfboard prototyping, power management etc.**
+It's a tiny robot with big feelings, built on perfboard. Animated eyes, banana snacks, and a button for attention. No custom PCB required.
 
 <img src="media/front-expressive-eyes.jpg" alt="The assembled robot keychain showing a face on its OLED" width="420">
 
